@@ -1,0 +1,151 @@
+.hero {
+  width: 100%;
+  padding-top: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 12vh;
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  width: 32vw;
+  height: 25vh;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 4.5vh;
+  font-family: bold;
+  letter-spacing: 1px;
+  margin-bottom: 4vh;
+}
+.hero h3 {
+  font-weight: 100;
+  font-family: light;
+  line-height: 4.5vh;
+  letter-spacing: 0.5px;
+  font-size: 2.05vh;
+}
+
+/* Sort By */
+
+.sortby {  
+  position: absolute;
+  top: 35vhvw;
+  left: 14vw;
+  /* transform: translate(-50%, -50%); */
+}
+
+select {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0.5vh;
+  border: 0.15vh solid var(--white);
+  padding: 2vh;
+  padding-right: 8vh;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1.7vh;
+  letter-spacing: 1px;
+  /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="101" height="61" viewBox="0 0 101 61"><g id="Polygon_1" data-name="Polygon 1" transform="translate(101 61) rotate(180)" fill="%23fff" stroke-linejoin="round"><path d="M 99.93695068359375 60.5 L 1.063049793243408 60.5 L 50.5 0.7840800285339355 L 99.93695068359375 60.5 Z" stroke="none"/><path d="M 50.5 1.568145751953125 L 2.126091003417969 60 L 98.87390899658203 60 L 50.5 1.568145751953125 M 50.5 0 L 101 61 L 0 61 L 50.5 0 Z" stroke="none" fill="#707070"/></g></svg>'); */
+  /* background-image: url('https://media.discordapp.net/attachments/764483710460231731/806442171624062976/unknown.png?width=491&height=428'); */
+}
+
+select option {
+  /* margin: 40px; */
+  background-color: var(--black);
+  color: #fff;
+  /* padding: 2vh 0; */
+  /* text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); */
+}
+
+/* Alumni */
+
+.hide {
+  display: none;
+  overflow: hidden;
+}
+
+.container {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.alumni {
+  width: 75vw;
+  /* background-color: pink; */
+  /* display: flex; */
+}
+
+.year {
+  font-size: 2vw;
+  font-family: bold;
+}
+
+.batch {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 7vh 0;
+}
+
+.card {
+  border: 0.15vh solid var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+  height: 35vh;
+  margin: 1.5vw;
+  margin-bottom: 6vh; 
+  padding: 1.5vw 3.2vw;  
+  border-radius: 0.5vh;
+  text-align: left;
+  line-height: 4.5vh;
+}
+
+.card .user {
+  display: flex;
+
+}
+
+.card .user-text{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size:  0.9vw;
+  font-family: bold;
+  letter-spacing: 1px;
+}
+
+/* .user-text h3{
+
+} */
+
+.card p{
+  font-weight: 100;
+  font-family: light;
+  line-height: 4.5vh;
+  letter-spacing: 0.5px;
+  font-size: 2.05vh;
+}
+
+.card img {
+  height: 100%;
+  width: 5.5vw;
+  border-radius: 100%;
+  margin-right: 2vw;
+}
+
+.card .fab {
+  font-size: 3vh;
+  margin: 0 1.5%
+}
