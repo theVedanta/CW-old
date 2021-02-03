@@ -180,6 +180,9 @@
   justify-content: flex-end;
   align-items: center;
 }
+#discW iframe {
+  width: 100%;
+}
 /* soBig ------------------------------------------- */
 .soBig {
   background: var(--sBlack);
@@ -407,12 +410,6 @@
   #discW h1 {
     margin: 0;
     margin-bottom: 2vh;
-  }
-  #discW p {
-    margin: 0;
-    font-size: 1.8vh;
-    line-height: 5vh;
-    margin: 2vh 0;
   }
   #discW .btn {
     width: 60%;

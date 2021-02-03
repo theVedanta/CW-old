@@ -33,7 +33,7 @@
 .big {
   margin-top: 5vh;
   width: 100%;
-  padding: 0 28vw;
+  padding: 0 23vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -52,10 +52,10 @@
   height: 22.5vh;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 2.2vh;
+  margin-bottom: 4vh;
 }
 .bigCard h2 {
-  font-size: 2.5vh;
+  font-size: 2.8vh;
   text-align: center;
 }
 .bigCard h3 {
@@ -65,10 +65,14 @@
 }
 .social {
   margin-top: 1.3vh;
-  font-size: 3vh;
+  font-size: 2.4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .social i {
-  margin: 0vh 0.5vw;
+  margin: 0 0.5vw;
 }
 
 .cards {
@@ -76,7 +80,7 @@
   margin-bottom: 6vh;
   width: 100%;
   display: flex;
-  padding: 0 18vw;
+  padding: 0 13vw;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -94,10 +98,10 @@
   height: 22.5vh;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
 }
 .card h2 {
-  font-size: 2.4vh;
+  font-size: 2.8vh;
   text-align: center;
   padding: 1.2vh 0;
 }
@@ -202,6 +206,9 @@
   }
   #searchBar {
     padding: 1.8vh 5vw;
+  }
+  .social i {
+    margin: 0 1vw;
   }
 }
 @media (max-width: 350px) {
