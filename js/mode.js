@@ -56,4 +56,4 @@ let loaded = () => {
   body.classList.remove("loading");
 };
 
-// $(window).on("load", setTimeout(loaded, 1500));
+$(window).on("load", setTimeout(loaded, 1500));
