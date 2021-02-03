@@ -43,7 +43,7 @@ document.addEventListener("mousemove", e => {
 
     const x = (window.innerWidth + e.pageX * speed)/100;
 
-    shape.style.transform = `translate(${x}px) rotate(var(--r))`
+    shape.style.transform = `translate(${x}px) rotate(var(--r))`;
   };
 });
 
