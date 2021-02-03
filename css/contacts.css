@@ -1,0 +1,153 @@
+.hero {
+    width: 100%;
+    padding-top: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 7.7vh;
+}
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+  .hero h1 {
+    font-size: 4.5vh;
+    font-family: bold;
+    letter-spacing: 1px;
+    margin-bottom: 4vh;
+}
+  .hero h3 {
+    font-weight: 100;
+    font-family: light;
+    line-height: 4.5vh;
+    letter-spacing: 0.5px;
+    font-size: 2.05vh;
+}  
+
+/* Conact Style  */
+
+.container {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: light;
+}
+
+.container-wrap {
+    /* background-color: pink; */
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.15vh solid var(--white);
+    padding: 2.5vw 4.5vw;
+    width: 45%;
+    margin-bottom: 7vh; 
+    border-radius: 0.5vh;
+}
+
+.card:nth-of-type(odd){
+    margin-right: 1vw;
+}
+
+.card:nth-of-type(even) {
+    margin-left: 1vw;
+}
+
+.card h1{    
+    font-size: 3.5vh;
+    margin-bottom: 2.8vh;
+}
+
+.card p{    
+    font-size: 2.5vh;
+    margin-bottom: 5.2vh;
+}
+
+.copy {
+    border: 0.1vh solid var(--white);
+    display: inline;
+    font-size: 2vh;
+    padding: 0.6vw 1.5vw;
+    border-radius: 0.5vh;
+}
+
+.copy:hover {
+    background-color: var(--white);
+    transition: 0.5s;
+}
+
+.copy:hover span, .copy:focus span {
+    color: var(--black);
+    transition: 0.5s;
+}
+
+.copy:hover .fas, .copy:focus .fas {
+    color: var(--black);
+    transition: 0.5s;
+}
+
+.fas {
+    color: var(--white)
+}
+
+.copy span {
+    margin: 0 0.5vw
+}
+
+footer {
+    margin-top: 6vh
+}
+
+/* Media Queries */
+
+@media (max-width: 1300px) {
+    .hero {
+      padding: 6vh 0;
+    }
+    .heroContent {
+      width: 55%;
+    }
+
+  }
+
+@media (max-width: 1200px) {
+    .card {
+        width: 70%;
+        min-height: 28vh
+    }
+    .card:nth-of-type(odd){
+        margin-right: 0;
+    }
+    
+    .card:nth-of-type(even) {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .card {
+        width: 120%;
+        min-width: 90%;
+        word-wrap: break-word;
+    }
+
+    .copy {
+        padding: 1vh 1.5vh;
+    }
+}
