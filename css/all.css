@@ -461,17 +461,17 @@ nav i {
   height: 100%;
 }
 .l1 {
-  animation: shapes 50s linear infinite;
+  animation: shapes 30s linear infinite;
 }
 .l2 {
-  animation: shapes 50s linear infinite;
+  animation: shapes 30s linear infinite;
   animation-direction: reverse;
 }
 .l3 {
-  animation: shapes2 50s linear infinite;
+  animation: shapes2 30s linear infinite;
 }
 .l4 {
-  animation: shapes2 50s linear infinite;
+  animation: shapes2 30s linear infinite;
   animation-direction: reverse;
 }
 /* NONES */
@@ -535,7 +535,7 @@ nav i {
     padding: 2vh 6vw;
   }
 }
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   nav a {
     display: none;
   }
@@ -564,7 +564,7 @@ nav i {
     font-size: 3.8vh;
   }
 }
-@media (max-width: 470px) {
+@media (max-width: 540px) {
   .side {
     width: 100vw;
   }
@@ -574,8 +574,6 @@ nav i {
   .footSocial a {
     margin: 0 4vw;
   }
-}
-@media (max-width: 440px) {
   .mob {
     display: none;
   }
