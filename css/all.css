@@ -34,6 +34,7 @@
 :root {
   --black: #252525;
   --white: #fefdf8;
+  --borderWhite: rgb(232, 232, 232, 0.8);
   --sBlack: #2e2e2e;
   --hColor: #202020;
   --scrolln: #a4a4a4;
