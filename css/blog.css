@@ -1,0 +1,204 @@
+/* .container-wrap {
+    display: flex;
+    justify-content: center;
+} */
+
+.container {
+    /* background-color: blueviolet; */
+    align-items: left;
+    width: 75vw;
+    align-self: center;
+    margin-left: 10vw;
+    margin-top: 12vh
+}
+
+/* Sort and Input Styles */
+
+.input-container {
+    display: flex;
+    justify-content: left;
+    z-index: -1;
+    margin-bottom: 9vh;
+    width: 40vw;
+}
+
+.input {
+    display: flex;
+    width: 20vw;
+    /* margin-top: 6vh; */
+    border: 0.15vh solid var(--white);
+    border-radius: 0.5vh;
+    position: relative;
+    height: 5.5vh;
+    margin-right: 3vw
+}
+
+#searchBar {
+    background: transparent;
+    width: 80%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 1.8vh 1vw;
+    transition: all 0.3s;
+    font-size: 1.8vh;
+    font-family: light;
+}
+
+#searchBar::placeholder {
+    color: var(--white);
+    font-family: light;
+}
+
+.input button {
+    background: transparent;
+    cursor: pointer;
+    width: 20%;
+    font-size: 2.4vh;
+    padding: 1vh 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-family: light;
+}
+
+#sortByYear {
+    background-color: transparent;
+    color: var(--white);
+    border-radius: 0.5vh;
+    border: 0.15vh solid var(--white);
+    font-size: 80%;
+    height: 5.5vh;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 1.7vh;
+    letter-spacing: 1px;
+    background-image: url('../assets/Vector\ 4.svg');
+    background-size: 1.7vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 9.5vw;
+    padding: 3% 1.7vh; 
+    padding-right: 8vh;
+}
+  
+#sortByYear:focus, #sortByYear:hover {
+    outline: none;
+}
+
+select option {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 2.3vh;
+    font-family: light;
+    /* padding: 20vh 0; */
+}
+
+/************ Arrow Styles ***********/
+
+.arrow-wrap {
+    position: absolute;
+    /* bottom: 15vh; */
+    right: 7vw;
+    cursor: pointer;
+    /* z-index : -1; */
+  }
+
+.arrow {
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.arrow:hover {
+
+}
+
+.arrow .fas {
+    font-size: 2vw;
+    align-self: center;
+    color: var(--black);
+}
+
+footer {
+    margin-top: 13vh
+}
+
+/************ Blog Styles ***********/
+
+.blog {
+    margin: 7vh 0;
+}
+
+.blog:last-of-type {
+    margin-bottom: 0;
+}
+
+.blog h1 {
+    font-size: 1.7vw;
+    letter-spacing: 0.25px;
+}
+
+.blog .info {
+    display: flex;
+    font-size: 0.95vw;
+    margin: 2vh 0;
+}
+
+.info p {
+    margin-right: 1vw;
+    letter-spacing: 0.6px;
+}
+
+.blog img {
+    width: 45vw;
+    height: 100%;
+}
+
+.blog .content{    
+  font-family: light;
+  line-height: 4.5vh;
+  letter-spacing: 0.5px;
+  font-size: 2.05vh;
+  max-width: 45vw;
+}
+
+.content p {
+    margin: 3vh 0;
+    /* height: 9vh; */
+    overflow: hidden
+}
+
+.read-more {
+    text-align: right;
+    cursor: pointer;
+}
+
+.blog .fas {
+    margin-left: 0.5vw;
+}
+
+/************ Javascript Stuff***********/
+
+.hide {
+    display: none;
+}
+
+.heightDefault {
+    height: 9vh;
+}
+
+.heightFull {
+    height: 100%;
+}
+
+/************ Media Queries ***********/
+
+@media (max-width: 1200px) {}
