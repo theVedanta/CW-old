@@ -34,19 +34,6 @@ btn.addEventListener("click", () => {
   changeMode();
 });
 
-// PARALLAX -------------------------------------------------
-let shapes = document.querySelectorAll(".transparent img");
-
-document.addEventListener("mousemove", e => {
-  for (let shape of shapes) {
-    let speed = shape.getAttribute("data-speed") ? shape.getAttribute("data-speed") - 0.5 : 3;
-
-    const x = (window.innerWidth + e.pageX * speed)/100;
-
-    shape.style.transform = `translate(${x}px) rotate(var(--r))`;
-  };
-});
-
 // LOADING
 let loader = document.querySelector(".loader");
 let body = document.body;

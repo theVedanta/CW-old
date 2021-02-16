@@ -117,9 +117,9 @@
   align-items: center;
 }
 .card {
-  width: 47%;
+  width: 45%;
   height: auto;
-  padding: 3vw;
+  padding: 2vw;
   border: 1px solid var(--white);
   margin-bottom: 6vh;
   border-radius: 5px;
@@ -134,8 +134,8 @@
   align-items: center;
 }
 .cardLeft img {
-  height: 14vh;
-  width: 14vh;
+  height: 12vh;
+  width: 12vh;
   border-radius: 50%;
 }
 .cardRight {

@@ -96,6 +96,23 @@ body {
 .light .lightR {
   display: inline-block;
 }
+.dShapes,
+.lShapes {
+  width: 100%;
+  height: 100%;
+}
+.dark .dShapes {
+  display: inline-block;
+}
+.dark .lShapes {
+  display: none;
+}
+.light .dShapes {
+  display: none;
+}
+.light .lShapes {
+  display: inline-block;
+}
 img {
   object-fit: cover;
   -webkit-user-select: none;
@@ -453,6 +470,7 @@ nav i {
   left: var(--l);
   transform: rotate(var(--r));
 }
+
 .l1,
 .l2,
 .l3,
