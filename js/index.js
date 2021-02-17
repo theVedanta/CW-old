@@ -100,4 +100,4 @@ let scene = document.getElementById("scene");
 let parallax = new Parallax(scene);
 
 parallax.invert(false, true);
-parallax.scalar(10, 20);
+parallax.scalar(7.5, 15);
