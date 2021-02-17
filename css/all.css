@@ -167,28 +167,28 @@ a {
     transform: translate(2vw, -1vw);
   }
   20% {
-    transform: translate(3vw, 2vw);
+    transform: translate(3vw, -3vw);
   }
   30% {
-    transform: translate(-2vw, -2.5vw);
+    transform: translate(0, 0);
   }
   40% {
     transform: translate(3.5vw, 1.5vw);
   }
   50% {
-    transform: translate(-1.5vw, 3vw);
+    transform: translate(0, 3vw);
   }
   60% {
-    transform: translate(2vw, -3vw);
+    transform: translate(-2vw, 0vw);
   }
   70% {
     transform: translate(0, -1vw);
   }
   80% {
-    transform: translate(-1vw, 3vw);
+    transform: translate(-1vw, 0);
   }
   90% {
-    transform: translate(2.8vw, 0);
+    transform: translate(0, 2vw);
   }
   100% {
     transform: translate(0);
@@ -202,28 +202,28 @@ a {
     transform: translate(1vw, -3vw);
   }
   20% {
-    transform: translate(0, 3vw);
+    transform: translate(4vw, -1vw);
   }
   30% {
-    transform: translate(-1vw, -2.5vw);
+    transform: translate(0, 0);
   }
   40% {
-    transform: translate(3.5vw, 1vw);
+    transform: translate(1.6vw, 5vw);
   }
   50% {
-    transform: translate(-1.5vw, 2.8vw);
+    transform: translate(0, 1vw);
   }
   60% {
-    transform: translate(1vw, -2vw);
+    transform: translate(-2.5vw, 0vw);
   }
   70% {
-    transform: translate(3, -2vw);
+    transform: translate(0, -1.8vw);
   }
   80% {
-    transform: translate(-2vw, -1vw);
+    transform: translate(-2vw, 0);
   }
   90% {
-    transform: translate(2.8vw, 0);
+    transform: translate(0, 3vw);
   }
   100% {
     transform: translate(0);
