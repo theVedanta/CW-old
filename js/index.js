@@ -94,3 +94,9 @@ let erase2 = () => {
 document.addEventListener("DOMContentLoaded", () => {
     if (textArray2.length) setTimeout(type2, 4400);
 });
+
+// PARALLAX
+let scene = document.getElementById('scene');
+let parallaxInstance = new Parallax(scene);
+
+parallaxInstance.invert(false, true);
