@@ -96,8 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // PARALLAX
-let scene = document.getElementById("scene");
-let parallax = new Parallax(scene);
+let scenes = document.querySelectorAll(".transparent");
 
-parallax.invert(false, true);
-parallax.scalar(7.5, 15);
+for (let scene of scenes) {
+    let parallax = new Parallax(scene);
+    parallax.invert(false, true);
+    parallax.scalar(7.5, 15);
+};
