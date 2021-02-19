@@ -94,12 +94,3 @@ let erase2 = () => {
 document.addEventListener("DOMContentLoaded", () => {
     if (textArray2.length) setTimeout(type2, 4400);
 });
-
-// PARALLAX
-let scenes = document.querySelectorAll(".transparent");
-
-for (let scene of scenes) {
-    let parallax = new Parallax(scene);
-    parallax.invert(false, false);
-    parallax.scalar(8, 15);
-};

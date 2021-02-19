@@ -6,6 +6,15 @@ ham.addEventListener("click", e => {
   side.classList.toggle("sideActive");
 });
 
+// PARALLAX
+let scenes = document.querySelectorAll(".transparent");
+
+for (let scene of scenes) {
+    let parallax = new Parallax(scene);
+    parallax.invert(false, false);
+    parallax.scalar(8, 15);
+};
+
 // --------------------- change theme ----------------------------
 let btn = document.querySelector(".fa-lightbulb");
 
@@ -34,13 +43,42 @@ btn.addEventListener("click", () => {
   changeMode();
 });
 
+// AOS
+AOS.init({
+  delay: 350,
+  duration: 400,
+  once: true
+});
+
 // LOADING
 let loader = document.querySelector(".loader");
 let body = document.body;
+let shapes = document.querySelectorAll(".transparent img");
 
 let loaded = () => {
   loader.classList.add("loaded");
   body.classList.remove("loading");
 };
+let shapeLoad = () => {
+  for (let shape of shapes) {
+    shape.style.opacity = "1";
+    shape.style.transform = "translate(0)";
+  };
+};
+let heroStuff = () => {
+  let p = document.querySelector(".hero h3");
+  let b = document.querySelector(".hero .btn");
+  let nav = document.querySelector("nav");
 
-$(window).on("load", setTimeout(loaded, 1500));
+  nav.style.transform = "none";
+  p.classList.add("upAOS");
+  b.classList.add("upAOS");
+};
+
+let load = () => {
+  setTimeout(loaded, 1000);
+  setTimeout(shapeLoad, 1400);
+  setTimeout(heroStuff, 1400);
+};
+
+$(window).on("load", load);
