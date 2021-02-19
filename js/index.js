@@ -100,6 +100,6 @@ let scenes = document.querySelectorAll(".transparent");
 
 for (let scene of scenes) {
     let parallax = new Parallax(scene);
-    parallax.invert(false, true);
-    parallax.scalar(7.5, 15);
+    parallax.invert(false, false);
+    parallax.scalar(8, 15);
 };
