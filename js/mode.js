@@ -15,6 +15,14 @@ for (let scene of scenes) {
   parallax.scalar(8, 15);
 };
 
+// ALL BTNS
+let allBtns = document.querySelectorAll(".btn");
+for (let btn of allBtns) {
+  btn.addEventListener("mouseenter", () => {
+    btn.style.transition = "all 0.2s";
+  });
+};
+
 // --------------------- change theme ----------------------------
 let btn = document.querySelector(".fa-lightbulb");
 
