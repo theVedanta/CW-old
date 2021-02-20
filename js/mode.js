@@ -19,7 +19,7 @@ for (let scene of scenes) {
 let allBtns = document.querySelectorAll(".btn");
 for (let btn of allBtns) {
   btn.addEventListener("mouseenter", () => {
-    btn.style.transition = "all 0.2s";
+    btn.style.transition = "all 0.3s";
   });
 };
 
