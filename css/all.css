@@ -184,12 +184,12 @@ a {
     transform: translate(1vw, -1vw);
   }
   100% {
-    transform: translate(0, -2vw);
+    transform: translate(0, -3vw);
   }
 }
 @keyframes shapes2 {
   0% {
-    transform: translate(0, -2vw);
+    transform: translate(0, -3vw);
   }
   12.5% {
     transform: translate(1vw, -1vw);
