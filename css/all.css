@@ -169,7 +169,7 @@ a {
     transform: translate(2vw, -1vw);
   }
   37% {
-    transform: translate(-2vw, 3vw);
+    transform: translate(-2vw, 1vw);
   }
   56% {
     transform: translate(1vw, 2vw);
@@ -181,7 +181,7 @@ a {
     transform: translate(2vw, 1vw);
   }
   87% {
-    transform: translate(1vw, -3vw);
+    transform: translate(1vw, -1vw);
   }
   100% {
     transform: translate(0, -3vw);
@@ -195,7 +195,7 @@ a {
     transform: translate(2vw, -3vw);
   }
   30% {
-    transform: translate(-2vw, 1vw);
+    transform: translate(0vw, -1vw);
   }
   37.5% {
     transform: translate(1vw, 1vw);
@@ -470,17 +470,17 @@ nav i {
   height: 100%;
 }
 .l1 {
-  animation: shapes 25s ease-in-out infinite;
+  animation: shapes 35s ease-in-out infinite;
 }
 .l2 {
-  animation: shapes 25s ease-in-out infinite;
+  animation: shapes 35s ease-in-out infinite;
   animation-direction: reverse;
 }
 .l3 {
-  animation: shapes2 25s ease-in-out infinite;
+  animation: shapes2 35s ease-in-out infinite;
 }
 .l4 {
-  animation: shapes2 25s ease-in-out infinite;
+  animation: shapes2 35s ease-in-out infinite;
   animation-direction: reverse;
 }
 /* NONES */
