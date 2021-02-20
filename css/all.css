@@ -149,7 +149,6 @@ a {
   font-size: 2vh;
   border: 1px solid var(--white);
   border-radius: 4px;
-  transition: all 0.2s;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -161,72 +160,60 @@ a {
 /* Head anim ------------------------------- */
 @keyframes shapes {
   0% {
-    transform: translate(0);
+    transform: translate(0, -3vw);
   }
-  10% {
-    transform: translate(2vw, -1vw);
+  12.5% {
+    transform: translate(-1vw, -2vw);
   }
-  20% {
-    transform: translate(3vw, -3vw);
+  25% {
+    transform: translate(-1vw, -1vw);
   }
-  30% {
-    transform: translate(0, 0);
-  }
-  40% {
-    transform: translate(3.5vw, 1.5vw);
+  37.5% {
+    transform: translate(-1vw, 1vw);
   }
   50% {
-    transform: translate(0, 3vw);
+    transform: translate(1vw, 2vw);
   }
-  60% {
-    transform: translate(-2vw, 0vw);
+  62.5% {
+    transform: translate(2vw, 2vw);
   }
-  70% {
-    transform: translate(0, -1vw);
+  75% {
+    transform: translate(2vw, 1vw);
   }
-  80% {
-    transform: translate(-1vw, 0);
-  }
-  90% {
-    transform: translate(0, 2vw);
+  87.5% {
+    transform: translate(1vw, -1vw);
   }
   100% {
-    transform: translate(0);
+    transform: translate(0, -2vw);
   }
 }
 @keyframes shapes2 {
   0% {
-    transform: translate(0);
+    transform: translate(0, -2vw);
   }
-  10% {
-    transform: translate(1vw, -3vw);
+  12.5% {
+    transform: translate(1vw, -1vw);
   }
-  20% {
-    transform: translate(4vw, -1vw);
+  25% {
+    transform: translate(2vw, 1vw);
   }
-  30% {
-    transform: translate(0, 0);
-  }
-  40% {
-    transform: translate(1.6vw, 5vw);
+  37.5% {
+    transform: translate(2vw, 2vw);
   }
   50% {
-    transform: translate(0, 1vw);
+    transform: translate(1vw, 2vw);
   }
-  60% {
-    transform: translate(-2.5vw, 0vw);
+  62.5% {
+    transform: translate(-1vw, 1vw);
   }
-  70% {
-    transform: translate(0, -1.8vw);
+  75% {
+    transform: translate(-1vw, -1vw);
   }
-  80% {
-    transform: translate(-2vw, 0);
-  }
-  90% {
-    transform: translate(0, 3vw);
+  87.5% {
+    transform: translate(-1vw, -2vw);
   }
   100% {
-    transform: translate(0);
+    transform: translate(0, -3vw);
   }
 }
 /* Main ---------------------------------- */
@@ -471,7 +458,7 @@ nav i {
   left: var(--l);
   transform: rotate(var(--r)) translateY(300px);
   opacity: 0;
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 
 .l1,
@@ -483,17 +470,17 @@ nav i {
   height: 100%;
 }
 .l1 {
-  animation: shapes 30s linear infinite;
+  animation: shapes 10s linear infinite;
 }
 .l2 {
-  animation: shapes 30s linear infinite;
+  animation: shapes 10s linear infinite;
   animation-direction: reverse;
 }
 .l3 {
-  animation: shapes2 30s linear infinite;
+  animation: shapes2 10s linear infinite;
 }
 .l4 {
-  animation: shapes2 30s linear infinite;
+  animation: shapes2 10s linear infinite;
   animation-direction: reverse;
 }
 /* NONES */

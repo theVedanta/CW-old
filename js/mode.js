@@ -10,9 +10,9 @@ ham.addEventListener("click", e => {
 let scenes = document.querySelectorAll(".transparent");
 
 for (let scene of scenes) {
-    let parallax = new Parallax(scene);
-    parallax.invert(false, false);
-    parallax.scalar(8, 15);
+  let parallax = new Parallax(scene);
+  parallax.invert(false, false);
+  parallax.scalar(8, 15);
 };
 
 // --------------------- change theme ----------------------------
