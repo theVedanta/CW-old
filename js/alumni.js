@@ -48,3 +48,12 @@ function getMatches(input) {
 
     return matchList;
 };
+
+// SORT
+let sort = document.querySelector(".sort");
+let opts = document.querySelector(".options");
+
+sort.addEventListener("click", () => {
+    sort.classList.toggle("sortActive");
+    opts.classList.toggle("optsActive");
+});

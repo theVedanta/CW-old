@@ -90,31 +90,73 @@
   justify-content: flex-end;
 }
 .sort {
-  color: var(--white);
-  position: relative;
-  background: transparent;
-  border: none;
-  font-size: 1.8vh;
-  cursor: pointer;
-  border: var(--white) solid 1px;
+  width: 50%;
   height: 100%;
-  padding: 0 2vw;
-  padding-right: 3.6vw;
+  display: flex;
+  border: 1px var(--white) solid;
   border-radius: 5px;
-  appearance: none;
-  background-image: url(../assets/down.png);
-  background-size: 8%;
-  background-repeat: no-repeat;
-  background-position-x: 90%;
-  background-position-y: center;
+  position: relative;
+}
+.by,
+.buttn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.by {
+  width: 80%;
+}
+.buttn {
+  width: 20%;
+  border-left: 1px var(--white) solid;
+}
+.options {
+  position: absolute;
+  top: 100%;
+  left: -0.5%;
+  width: 101%;
+  z-index: 10;
+  border-radius: 0 0 5px 5px;
+  background: var(--black);
+  border: 1px solid var(--white);
+  opacity: 0;
+  transform-origin: top;
+  transform: scaleY(0.8);
+  pointer-events: none;
+  transition: all 0.26s;
+}
+.option {
+  padding: 1.6vh 1vw;
+  border-bottom: 1px solid var(--white);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.option:hover {
+  background: var(--white);
+  color: var(--black);
+}
+.option:last-child {
+  border: none;
+}
+.sortActive {
+  border-radius: 5px 5px 0 0;
+}
+.optsActive {
+  opacity: 1;
+  pointer-events: all;
+  transform: scaleY(1);
 }
 /* CARDS */
 .cards {
   width: 100%;
   display: flex;
+  padding-bottom: 5vh;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  overflow-y: hidden;
 }
 .card {
   width: 45%;
@@ -179,7 +221,7 @@
   line-height: 3vh;
   opacity: 0;
   transform: translateY(-10px);
-  transition: all 0.8s;
+  transition: all 0.2s;
 }
 .card:hover .write {
   margin: 5vh 0;
@@ -220,9 +262,6 @@
   .input button {
     padding: 1.8vh 4vw;
   }
-  .sort {
-    width: 28vw;
-  }
   .header h2 {
     font-size: 3vh;
   }
@@ -251,6 +290,10 @@
   .writeActive {
     margin: 3vh 0;
   }
+  .sort {
+    width: 80%;
+    font-size: 1.6vh;
+  }
 }
 @media (max-width: 800px) {
   .heroContent {
@@ -264,12 +307,22 @@
   .heroContent {
     width: 100%;
   }
+  .header {
+    margin: 5vh 0;
+  }
   .input {
     width: 30vw;
   }
   #searchBar {
     font-size: 1.5vh;
     padding: 1vh 3vw;
+  }
+  .sort {
+    width: 30vw;
+    font-size: 1.3vh;
+  }
+  .option {
+    padding: 1.4vh 3vw;
   }
   .input button {
     padding: 1vh 4vw;
@@ -278,15 +331,13 @@
   .header h2 {
     font-size: 2vh;
   }
-  .sort {
-    font-size: 1.5vh;
-    padding: 1vh 3vw;
-  }
   .cards {
     padding: 0;
+    padding-bottom: 5vh;
   }
   .card {
     padding: 3vh 4vw;
+    margin-bottom: 2vh;
   }
   .card img {
     width: 10vh;
