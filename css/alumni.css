@@ -121,7 +121,7 @@
   height: auto;
   padding: 2vw;
   border: 1px solid var(--white);
-  margin-bottom: 6vh;
+  margin-bottom: 7vh;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -171,7 +171,7 @@
   width: 100%;
   margin: 0;
   height: 0;
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 .write p {
   padding: 0 2vw;
@@ -179,38 +179,16 @@
   line-height: 3vh;
   opacity: 0;
   transform: translateY(-10px);
-  transition: all 0.2s;
+  transition: all 0.8s;
 }
-.writeActive {
+.card:hover .write {
   margin: 5vh 0;
   height: 7vh;
 }
-.writeActive p {
+.card:hover .write p {
   opacity: 1;
   transform: translateY(0);
 }
-/* Arrow */
-.arr {
-  position: absolute;
-  bottom: 10%;
-  right: 5%;
-  width: 2vw;
-  height: 2vw;
-  border-radius: 50%;
-  background: var(--white);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.4s;
-}
-.arr i {
-  color: var(--black);
-}
-.arrActive {
-  transform: rotate(180deg);
-}
-
 /* MEDIAS */
 @media (max-width: 1300px) {
   .hero {
@@ -287,11 +265,50 @@
     width: 100%;
   }
   .input {
-    width: 36vw;
+    width: 30vw;
   }
-  #searchBar,
+  #searchBar {
+    font-size: 1.5vh;
+    padding: 1vh 3vw;
+  }
   .input button {
-    padding: 1.8vh 5vw;
+    padding: 1vh 4vw;
+    font-size: 2vh;
+  }
+  .header h2 {
+    font-size: 2vh;
+  }
+  .sort {
+    font-size: 1.5vh;
+    padding: 1vh 3vw;
+  }
+  .cards {
+    padding: 0;
+  }
+  .card {
+    padding: 3vh 4vw;
+  }
+  .card img {
+    width: 10vh;
+    height: 10vh;
+  }
+  .card h2 {
+    font-size: 2vh;
+  }
+  .card h3 {
+    font-size: 1.8vh;
+    margin-top: 1vh;
+  }
+  .social {
+    margin-top: 1.2vh;
+  }
+  .write p {
+    font-size: 1.7vh;
+    line-height: 2.6vh;
+  }
+  .card:hover .write {
+    margin: 3.4vh 0;
+    height: 5vh;
   }
 }
 @media (max-width: 350px) {

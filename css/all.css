@@ -149,6 +149,7 @@ a {
   font-size: 2vh;
   border: 1px solid var(--white);
   border-radius: 4px;
+  transition: all 0.3s;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -298,9 +299,9 @@ footer p {
 /* Nav ----------------------------------- */
 nav {
   display: flex;
+  padding: 3vh 0;
   transform: translateY(-100%);
   transition: all 0.5s 0.3s;
-  padding: 3vh 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -603,7 +604,9 @@ nav i {
   opacity: 1;
   transform: translate(0);
 }
-
+.theTrans {
+  transition: all 0.3s;
+}
 /* MEDIA END */
 .fa,
 .fas,

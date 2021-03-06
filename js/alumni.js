@@ -1,14 +1,3 @@
-let arrs = document.querySelectorAll(".arr");
-
-for (let arr of arrs) {
-    arr.addEventListener("click", e => {
-        arr.classList.toggle("arrActive");
-        let card = arr.parentElement;
-        let write = card.querySelector(".write");
-        write.classList.toggle("writeActive");
-    });
-};
-
 // SEARCH
 let search = document.querySelector("#searchBar");
 let cards = document.querySelectorAll(".card");

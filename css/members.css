@@ -38,6 +38,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 .card {
   width: 30%;
@@ -94,6 +95,10 @@
   border: 1px var(--white) solid;
   border-radius: 5px;
   position: relative;
+  transition: all 0.3s;
+}
+.input:hover {
+  box-shadow: 0 0 8px var(--white);
 }
 #searchBar {
   background: transparent;
