@@ -222,9 +222,6 @@
 }
 /* MEDIAS */
 @media (max-width: 1400px) {
-  .hero h3 {
-    font-size: 1.9vh;
-  }
   .write p {
     font-size: 1.9vh;
   }
@@ -239,14 +236,15 @@
   .hero {
     height: 80vh;
     margin-bottom: 0;
+    padding-top: 7vh;
   }
   .hero h3 {
-    line-height: 3vh;
-    font-size: 2vh;
+    line-height: 3.6vh;
+    font-size: 2.3vh;
     margin-top: 1.5vh;
   }
   .hero .btn {
-    margin-top: 1.5vh;
+    margin-top: 5vh;
   }
   .vid {
     height: 50vh;
@@ -256,7 +254,7 @@
     font-size: 3vh;
   }
   .write p {
-    line-height: 2.4vh;
+    line-height: 3.2vh;
     padding-right: 2vw;
     font-size: 2vh;
   }
@@ -271,8 +269,13 @@
     font-size: 2vh;
     line-height: 3.4vh;
   }
+  .write a {
+    padding: 2vh 0;
+    width: 40%;
+  }
   .soBig a {
-    width: 30%;
+    width: 20%;
+    padding: 2vh;
   }
 }
 @media (max-width: 800px) {
@@ -284,17 +287,23 @@
   }
   .hero h1 {
     font-size: 4vh;
+    width: 80%;
+    min-height: 8vh;
+    margin-bottom: 6vh;
   }
   .hero .btn {
-    margin-top: 1vh;
+    margin-top: 5vh;
   }
   .hero h3 {
     margin-top: 1vh;
     padding: 0 8vw;
-    font-size: 1.8vh;
+    font-size: 2vh;
+    line-height: 4vh;
   }
   .hero {
     height: 65vh;
+    padding-top: 5vh;
+    margin-bottom: 13vh;
   }
   .vid {
     height: 35vh;
