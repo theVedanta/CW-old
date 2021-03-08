@@ -10,5 +10,7 @@ for (let copyBtn of copyBtns) {
         window.getSelection().addRange(range);
         document.execCommand("copy");
         window.getSelection().removeAllRanges();
+        copyBtn.innerHTML = `Copied!<i class="fas fa-check"></i>`;
+        setTimeout(() => copyBtn.innerHTML = `Copy<i class="fas fa-copy"></i>`, 750);
     });
 };

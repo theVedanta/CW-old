@@ -33,7 +33,7 @@
 .header {
   display: flex;
   width: 100%;
-  margin: 10vh 0;
+  margin-bottom: 6vh;
 }
 .inputCont,
 .year,
@@ -159,15 +159,16 @@
   overflow-y: hidden;
 }
 .card {
-  width: 45%;
+  width: 47%;
   height: auto;
   padding: 2vw;
   border: 1px solid var(--white);
-  margin-bottom: 7vh;
+  margin-bottom: 3vh;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  transform: scale(0.93);
 }
 .cardLeft {
   display: flex;
@@ -192,6 +193,7 @@
 .card h2 {
   font-size: 2.8vh;
   font-family: med;
+  white-space: nowrap;
 }
 .card h3 {
   font-size: 2.4vh;
@@ -211,25 +213,12 @@
 }
 .write {
   width: 100%;
-  margin: 0;
-  height: 0;
-  transition: all 0.6s;
+  margin: 2.6vh 0;
 }
 .write p {
   padding: 0 2vw;
   font-size: 2vh;
   line-height: 3vh;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: all 0.2s;
-}
-.card:hover .write {
-  margin: 5vh 0;
-  height: 7vh;
-}
-.card:hover .write p {
-  opacity: 1;
-  transform: translateY(0);
 }
 /* MEDIAS */
 @media (max-width: 1300px) {
@@ -248,22 +237,6 @@
   #searchBar,
   .input button {
     padding: 1.8vh 3vw;
-  }
-  .arr {
-    width: 4vw;
-    height: 4vw;
-  }
-}
-@media (max-width: 860px) {
-  .input {
-    width: 28vw;
-  }
-  #searchBar,
-  .input button {
-    padding: 1.8vh 4vw;
-  }
-  .header h2 {
-    font-size: 3vh;
   }
   .card {
     width: 100%;
@@ -287,8 +260,17 @@
     padding-left: 4vw;
     padding-right: 3vw;
   }
-  .writeActive {
-    margin: 3vh 0;
+}
+@media (max-width: 1000px) {
+  .input {
+    width: 28vw;
+  }
+  #searchBar,
+  .input button {
+    padding: 1.8vh 4vw;
+  }
+  .header h2 {
+    font-size: 3vh;
   }
   .sort {
     width: 80%;
@@ -313,6 +295,9 @@
   .input {
     width: 30vw;
   }
+  .input button {
+    display: none;
+  }
   #searchBar {
     font-size: 1.5vh;
     padding: 1vh 3vw;
@@ -336,7 +321,9 @@
     padding-bottom: 5vh;
   }
   .card {
-    padding: 3vh 4vw;
+    padding: 0 4vw;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
     margin-bottom: 2vh;
   }
   .card img {
@@ -353,13 +340,12 @@
   .social {
     margin-top: 1.2vh;
   }
+  .social i {
+    margin-right: 2vw;
+  }
   .write p {
     font-size: 1.7vh;
     line-height: 2.6vh;
-  }
-  .card:hover .write {
-    margin: 3.4vh 0;
-    height: 5vh;
   }
 }
 @media (max-width: 350px) {
@@ -368,5 +354,78 @@
   }
   .hero h3 {
     font-size: 2.4vh;
+  }
+}
+@media (max-height: 770px) {
+  .cards {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    padding-bottom: 5vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+  }
+  .card {
+    width: 48%;
+    min-height: auto;
+    padding: 2vw;
+    border: 1px solid var(--white);
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    transform: scale(0.93);
+  }
+  .cardLeft {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardLeft img {
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+  }
+  .cardRight {
+    width: 65%;
+    height: 100%;
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .card h2 {
+    font-size: 2.8vh;
+    font-family: med;
+  }
+  .card h3 {
+    font-size: 2.4vh;
+    font-family: light;
+    margin-top: 1.4vh;
+  }
+  .social {
+    margin-top: 1.8vh;
+    font-size: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .social i {
+    margin-right: 1vw;
+  }
+  .write {
+    width: 100%;
+    margin: 2.6vh 0;
+  }
+  .write p {
+    padding: 0 2vw;
+    font-size: 2vh;
+    line-height: 3vh;
   }
 }
