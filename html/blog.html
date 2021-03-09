@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CW - Blogs</title>
+    <title>Code Warriors - Home</title>
     <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/blog.css">
 </head>
-<body class="dark">
-    
+<body class="dark loading">
+    <div class="loader">
+        <h1>CW</h1>
+    </div>
     <main>
         <nav>
             <div class="navLeft">
-                <a class="navBtn" href="https://discord.com/invite/jS6A7UZ3?utm_source=Discord%20Widget&utm_medium=Connect">Join
-                    Discord</a>
+                <a class="navBtn" href="https://discord.com/invite/jS6A7UZ3?utm_source=Discord%20Widget&utm_medium=Connect">Join Discord</a>
                 <a class="navLink" href="#">Blog</a>
                 <a class="navLink" href="#">Archive</a>
                 <a class="navLink" href="#">Resources</a>
@@ -32,7 +34,7 @@
                 <i class="fas fa-lightbulb"></i>
             </div>
         </nav>
-
+        
         <div class="side">
             <a style="--navD: 0.4s" class="navBtn" href="https://discord.com/invite/jS6A7UZ3?utm_source=Discord%20Widget&utm_medium=Connect">Join Discord</a>
             <a style="--navD: 0.44s" class="navLink active" href="#">Home</a>
@@ -43,25 +45,9 @@
             <a style="--navD: 0.64s" class="navLink" href="#">Contact</a>
             <a style="--navD: 0.68s" class="navLink" href="#">Alumni</a>
         </div>
-
-        <!-- <section class="hero">
-            <div class="heroContent">
-                <h1>The Team</h1>
-                <h3>
-                    We're the Code Warriors, the computer club of DPS Vasant Kunj. We're a team of technology addicts, and our skills
-                    range
-                    from gaming to designing
-                </h3>
-                <div class="input">
-                    <input id="searchBar" type="text" placeholder="Search">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </section> -->
     </main>
+   
     
-    <a id="top"></a>
-
     <section class="container">
         <div class="input-container">
             <div class="input">
@@ -71,7 +57,7 @@
             
             <div class="sortYear">
                 <select name="" id="sortByYear">
-                    <option name="" value="volvo" selected disabled>Sort by year</option>
+                    <option name="" value="volvo" selected>Sort by year</option>
                     <option name="" value="saab">Saab</option>
                     <option name="" value="mercedes">Mercedes</option>
                     <option name="" value="audi">Audi</option>
@@ -79,69 +65,24 @@
             </div>
         </div>
 
-        <div class="blog">
-            <h1>Bani das gets fired as tech lead</h1>
-            <div class="info">
-                <p>Posted on DD-MM-YYYY</p>
-                <p>by Kevin Baba</p>
+        <div class="items">
+            <div class="item" id="item1">
+                <h1>Bani das gets fired as the tech head</h1>
+                <h3>Posted on DD-MM-YYYY <span>By kevin Baba</span></h3>
+                <img class="images" src="https://cdn.discordapp.com/attachments/743744384301924363/817856751323447367/4v3uvqiz1al61.png">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
             </div>
-            <img src="../assets/169.jpg" />
-            <div class="content">
-                <p class="heightDefault">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum debitis namsksjs necessitatibus facilis expedita reiciendis voluptatibus quas nesciunt esse ratione eos sunt ut, rerum molestiae aspernatur repudiandae voluptate cumque repellat?
-                </p>
-                <div class="read-more">
-                    <span>Read More <i class="fas fa-caret-down"></i></span>
-                    <span class="hide">Read Less <i class="fas fa-caret-up"></i></span>
-                </div>
+
+            <div class="item" id="item1">
+                <h1>Bani das gets fired as the tech head</h1>
+                <h3>Posted on DD-MM-YYYY <span>By kevin Baba</span></h3>
+                <img class="images" src="https://i.redd.it/6pmfeahrs1g61.png">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
             </div>
         </div>
 
-        <div class="blog">
-            <h1>Bani das gets fired as tech lead</h1>
-            <div class="info">
-                <p>Posted on DD-MM-YYYY</p>
-                <p>by Kevin Baba</p>
-            </div>
-            <img src="../assets/teddy.jpg" />
-            <div class="content">
-                <p class="heightDefault">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum debitis namsksjs necessitatibus facilis expedita reiciendis voluptatibus quas nesciunt esse ratione eos sunt ut, rerum molestiae aspernatur repudiandae voluptate cumque repellat?
-                </p>
-                <div class="read-more">
-                    <span>Read More <i class="fas fa-caret-down"></i></span>
-                    <span class="hide">Read Less <i class="fas fa-caret-up"></i></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="blog">
-            <h1>Bani das gets fired as tech lead</h1>
-            <div class="info">
-                <p>Posted on DD-MM-YYYY</p>
-                <p>by Kevin Baba</p>
-            </div>
-            <img src="../assets/169.jpg" />
-            <div class="content">
-                <p class="heightDefault">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem vero velit officiis voluptatum sint amet, praesentium eum veritatis beatae reiciendis delectus nihil dolorem libero animi voluptates voluptas eos laborum, perspiciatis impedit quas? Tempora sunt assumenda dicta aut deserunt aliquam beatae rem, blanditiis quis, dolorum accusamus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum debitis namsksjs necessitatibus facilis expedita reiciendis voluptatibus quas nesciunt esse ratione eos sunt ut, rerum molestiae aspernatur repudiandae voluptate cumque repellat?
-                </p>
-                <div class="read-more">
-                    <span>Read More <i class="fas fa-caret-down"></i></span>
-                    <span class="hide">Read Less <i class="fas fa-caret-up"></i></span>
-                </div>
-            </div>
-        </div>
     </section>
-
-        <div class="arrow-wrap">
-            <a href="#top">
-                <div class="arrow">
-                    <i class="fas fa-arrow-up"></i>
-                </div>
-            </a>            
-        </div>
-
+    
     <footer>
         <p><span id="titleF"></span><span id="cursorF" class="cursor footcur"></span></p>
         <div class="footSocial">
@@ -159,9 +100,10 @@
             </a>
         </div>
     </footer>
-    
-    <script src="../js/footer.js"></script>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="../js/mode.js"></script>
-    <script src="../js/blog.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
