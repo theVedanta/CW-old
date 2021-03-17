@@ -1,3 +1,9 @@
+:root {
+  --text: 2.0vh;
+}
+.hero h3, .write p, .soBig p {
+  font-family: light;
+}
 .hero {
   width: 100%;
   padding: 18vh 0;
@@ -29,13 +35,13 @@
   font-family: light;
   line-height: 4.5vh;
   letter-spacing: 0.5px;
-  font-size: 2.05vh;
+  font-size: var(--text);
 }
 #title {
   font-family: bold;
 }
 .hero .btn {
-  margin-top: 5vh;
+  margin-top: 3.8vh;
 }
 /* Video ---------------------------------------- */
 .vid {
@@ -126,7 +132,7 @@
   line-height: 4vh;
   font-family: light;
   margin: 2vh 0;
-  font-size: 2vh;
+  font-size: var(--text);
   padding-right: 8vw;
 }
 .writeRight {
@@ -214,7 +220,7 @@
 .soBig p {
   padding: 0 12vw;
   line-height: 4vh;
-  font-size: 2vh;
+  font-size: var(--text);
 }
 .soBig a {
   margin-top: 4vh;
@@ -222,11 +228,8 @@
 }
 /* MEDIAS */
 @media (max-width: 1400px) {
-  .write p {
-    font-size: 1.9vh;
-  }
-  .soBig p {
-    font-size: 1.9vh;
+  :root {
+    --text: 1.9vh;
   }
 }
 @media (max-width: 1200px) {
@@ -236,11 +239,10 @@
   .hero {
     height: 80vh;
     margin-bottom: 0;
-    padding-top: 7vh;
+    padding: 7vh 0;
   }
   .hero h3 {
     line-height: 3.6vh;
-    font-size: 2.3vh;
     margin-top: 1.5vh;
   }
   .hero .btn {
@@ -256,7 +258,6 @@
   .write p {
     line-height: 3.2vh;
     padding-right: 2vw;
-    font-size: 2vh;
   }
   .write a {
     width: 60%;
@@ -266,7 +267,6 @@
   }
   .soBig p {
     padding: 0 5vw;
-    font-size: 2vh;
     line-height: 3.4vh;
   }
   .write a {
@@ -276,6 +276,9 @@
   .soBig a {
     width: 20%;
     padding: 2vh;
+  }
+  :root {
+    --text: 2.3vh
   }
 }
 @media (max-width: 800px) {
@@ -297,7 +300,6 @@
   .hero h3 {
     margin-top: 1vh;
     padding: 0 8vw;
-    font-size: 2vh;
     line-height: 4vh;
   }
   .hero {
@@ -316,14 +318,13 @@
   }
   .write p {
     padding: 0;
-    font-size: 1.4vh;
-  }
-  .soBig p {
-    font-size: 1.4vh;
   }
   .mainImg {
     width: 90%;
     height: 90%;
+  }
+  :root {
+    --text: 2vh
   }
 }
 @media (max-width: 540px) {
@@ -333,17 +334,21 @@
   nav {
     padding: 3vh 4vw;
   }
+  .hero {
+    padding-bottom: 7vh;
+    margin: 0;
+  }
   .heroContent {
     width: 100%;
-    min-height: 60%;
+    height: 70%;
     justify-content: space-around;
   }
-  .hero {
-    height: 69vh;
+  .hero h1 {
+    font-size: 3.3vh;
+    min-height: 8vh;
   }
   .hero h3 {
     margin-top: 1vh;
-    font-size: 2vh;
     padding-left: 2vw;
     padding-right: 2vw;
     line-height: 4vh;
@@ -408,7 +413,6 @@
     margin: 5vh 0;
   }
   .write p {
-    font-size: 2vh;
     margin: 4vh 0;
     line-height: 5vh;
   }
@@ -443,7 +447,6 @@
   }
   .soBig p {
     padding: 0 2vw;
-    font-size: 2vh;
   }
   .soBig .btn {
     width: 50%;
@@ -455,7 +458,7 @@
     width: 55%;
   }
   #cursor {
-    height: 40px;
+    height: 28px;
   }
 }
 @media (max-height: 850px) {

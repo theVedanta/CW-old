@@ -6,8 +6,10 @@
 .container {
     /* background-color: blueviolet; */
     align-items: left;
-    padding: 0 15vw;
-    margin-top: 6vw;
+    width: 75vw;
+    align-self: center;
+    margin-left: 10vw;
+    margin-top: 12vh
 }
 
 /* Sort and Input Styles */
@@ -15,18 +17,16 @@
 .input-container {
     display: flex;
     justify-content: left;
-    
-    margin-bottom: 4vw;
+    z-index: -1;
+    margin-bottom: 9vh;
     width: 40vw;
-    position: relative;
-        
 }
 
 .input {
     display: flex;
     width: 20vw;
     /* margin-top: 6vh; */
-    border: 0.15vh solid var(--white);
+    border: 0.15vh solid var(--borderWhite);
     border-radius: 0.5vh;
     position: relative;
     height: 5.5vh;
@@ -66,7 +66,7 @@
     background-color: transparent;
     color: var(--white);
     border-radius: 0.5vh;
-    border: 0.15vh solid var(--white);
+    border: 0.15vh solid var(--borderWhite);
     font-size: 80%;
     height: 5.5vh;
     cursor: pointer;
@@ -131,86 +131,74 @@ footer {
     margin-top: 13vh
 }
 
-.item{
-    width: 75%;
-    transform: scale(0.97) translateX(-1.5%);
-    margin-bottom: 13vh;
-}
-.item h1{
-    font-family: med;
-}
-.item h3{
-    font-family: light;
-    margin-top: 3.5vh;
-    font-size: 2.05vh;
-    color: #FEFDF8;
-    opacity: 0.8;
-}
-.item h3 span{
-    margin-left: 2vw;
-}
-.item img{
-    width: 100%;
-    margin-top: 3.6vh;
-    border-radius: 2%;
-}
-.item p{
-    font-family: light;
-    margin-top: 6vh;
-    font-size: 1.95vh;
-    line-height: 4.2vh;
-    letter-spacing: 0.5px;
+/************ Blog Styles ***********/
+
+.blog {
+    margin: 7vh 0;
 }
 
-@media (max-width: 1300px) {
-    .container {
-        padding: 0 8.5vw;
-    }
-
+.blog:last-of-type {
+    margin-bottom: 0;
 }
-@media (max-width: 1100px) {
-    .input-container{
-        width: 80%;
-        position: relative;
-        left:50%;
-        transform: translateX(-50%);
-    }
-    .items{
-        width: 80%;
-        position: relative;
-        left:50%;
-        transform: translateX(-50%);
-    }
-    .item{
-        width: 100%;
-    }
-    .input {
-        width: 60%;
-    }
-}
-    @media (max-width: 800px) {
-        .input {
-            display: flex;
-            width: 100%;
-            /* margin-top: 6vh; */
-            border: 0.15vh solid var(--white);
-            padding:0 2vw;
-            border-radius: 0.5vh;
-            position: relative;
-            height: 5.5vh;
-            margin-right: 3vw
-        }
-        .input-container {
-            display: flex;
-            justify-content: space-between;
-            padding: 0 10%;
-            margin-bottom: 4vw;
-            width: 100%;
-        }
-        .input button{
-            display: inline-block;
-            text-align: right;
-            
-        }
-    }
 
+.blog h1 {
+    font-size: 1.7vw;
+    letter-spacing: 0.25px;
+}
+
+.blog .info {
+    display: flex;
+    font-size: 0.95vw;
+    margin: 2vh 0;
+}
+
+.info p {
+    margin-right: 1vw;
+    letter-spacing: 0.6px;
+}
+
+.blog img {
+    width: 45vw;
+    height: 100%;
+}
+
+.blog .content{    
+  font-family: light;
+  line-height: 4.5vh;
+  letter-spacing: 0.5px;
+  font-size: 2.05vh;
+  max-width: 45vw;
+}
+
+.content p {
+    margin: 3vh 0;
+    /* height: 9vh; */
+    overflow: hidden
+}
+
+.read-more {
+    text-align: right;
+    cursor: pointer;
+}
+
+.blog .fas {
+    margin-left: 0.5vw;
+}
+
+/************ Javascript Stuff***********/
+
+.hide {
+    display: none;
+}
+
+.heightDefault {
+    height: 9vh;
+}
+
+.heightFull {
+    height: 100%;
+}
+
+/************ Media Queries ***********/
+
+@media (max-width: 1200px) {}

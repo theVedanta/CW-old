@@ -33,9 +33,12 @@
   display: flex;
   width: 20vw;
   margin-top: 6vh;
-  border: 1px var(--white) solid;
+  border: 1px var(--borderWhite) solid;
   border-radius: 5px;
   position: relative;
+}
+.input img {
+  width: 100%
 }
 #searchBar {
   background: transparent;

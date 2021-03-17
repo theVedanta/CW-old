@@ -34,11 +34,12 @@
 :root {
   --black: #252525;
   --white: #fefdf8;
-  --borderWhite: rgb(232, 232, 232, 0.8);
+  --borderWhite: rgba(254, 253, 248, 0.8);
   --sBlack: #2e2e2e;
   --hColor: #202020;
   --scrolln: #a4a4a4;
   --scrolly: #4b4b4b;
+  --dull: rgba(254, 253, 248, 0.5);
 }
 * {
   padding: 0;
@@ -66,10 +67,12 @@ body {
 .light {
   --black: #fefdf8;
   --white: #252525;
+  --borderWhite: rgba(37, 37, 37, 0.8);
   --sBlack: #f3f3f1;
   --hColor: #dfdfdf;
   --scrolln: #d5d5d5;
   --scrolly: #bebebe;
+  --dull: rgba(37, 37, 37, 0.5);
 }
 .dark .lD {
   display: none;
@@ -147,7 +150,7 @@ a {
 .btn {
   padding: 2vh 4vw;
   font-size: 2vh;
-  border: 1px solid var(--white);
+  border: 1px solid var(--borderWhite);
   border-radius: 4px;
   transition: all 0.3s;
   -webkit-user-select: none;
@@ -328,7 +331,7 @@ nav a {
 }
 .navBtn {
   padding: 1vh 2vw;
-  border: 1.7px var(--white) solid;
+  border: 1.7px var(--borderWhite) solid;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s;
@@ -503,18 +506,18 @@ nav i {
   pointer-events: none;
   transition: all 0.4s;
 }
-.loader h1 {
-  font-size: 15vh;
-  font-family: logo;
-  font-weight: 100;
-  animation: load 1.3s infinite ease;
-}
 .loading {
   overflow-y: hidden;
 }
 .loaded {
   opacity: 0;
   pointer-events: none;
+}
+.loader h1 {
+  font-size: 15vh;
+  font-family: logo;
+  font-weight: 100;
+  animation: load 1.3s infinite ease-in-out;
 }
 @keyframes load {
   0% {
@@ -572,6 +575,9 @@ nav i {
   }
   .navMid {
     font-size: 3.8vh;
+  }
+  .footSocial a {
+    margin: 0 3vw;
   }
 }
 @media (max-width: 540px) {

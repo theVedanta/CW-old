@@ -3,7 +3,7 @@ const cursor = document.getElementById("cursor");
 
 const textArray = [
     "We are the warriors that built this town",
-    "President Vedanta is now president Vedanta",
+    "President Vedanta is now president.",
     "soBig wasn't so big this year",
     "We build cool stuff and pwn at events",
 ];

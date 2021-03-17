@@ -11,25 +11,44 @@ for (let card of cards) {
 };
 
 search.addEventListener("keyup", e => {
+    document.querySelector(".cards").style.paddingTop = "10vh";
+    document.querySelector(".cards").style.paddingBottom = "10vh";
     let usrInp = search.value.trim();
     let matches = getMatches(usrInp);
     if (usrInp == "") {
+        document.querySelector(".cards").style.paddingTop = "0";
+        document.querySelector(".cards").style.paddingBottom = "0";
         for (let card of cards) {
             card.style.display = "flex";
         };
+        let heads = document.querySelectorAll(".header");
+        for (let head of heads) {
+            head.style.display = "flex";
+        }
+        document.querySelector(".year").style.visibility = "visible";
     } else {
         for (let card of cards) {
             card.style.display = "none";
         };
+        let heads = document.querySelectorAll(".header");
+        for (let head of heads) {
+            head.style.display = "none";
+        }
+        document.querySelector(".header").style.display = "flex";
+        document.querySelector(".year").style.visibility = "hidden";
     };
     for (let match of matches) {
         for (let title of titles) {
             if (match == title) {
+                document.querySelector(".cards").style.paddingTop = "0";
+                document.querySelector(".cards").style.paddingBottom = "0";
                 for (let card of cards) {
                     if (card.querySelector("h2").textContent.toLowerCase() == title) {
                         card.style.display = "flex";
+                        card.parentElement.previousElementSibling.style.display = "flex";
                     } else if (card.querySelector("h3").textContent.toLowerCase() == title) {
                         card.style.display = "flex";
+                        card.parentElement.previousElementSibling.style.display = "flex";
                     }
                 };
             };
@@ -50,10 +69,10 @@ function getMatches(input) {
 };
 
 // SORT
-let sort = document.querySelector(".sort");
+let sorter = document.querySelector(".sort");
 let opts = document.querySelector(".options");
 
-sort.addEventListener("click", () => {
-    sort.classList.toggle("sortActive");
+sorter.addEventListener("click", () => {
+    sorter.classList.toggle("sortActive");
     opts.classList.toggle("optsActive");
 });
