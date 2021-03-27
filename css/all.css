@@ -514,12 +514,100 @@ nav i {
   pointer-events: none;
 }
 .loader h1 {
-  font-size: 15vh;
+  font-size: 10vh;
   font-family: logo;
   font-weight: 100;
-  animation: load 1.3s infinite ease-in-out;
 }
+
+.lin {
+  width: 4vw;
+  height: 5vw;
+  border-bottom: 2px var(--borderWhite) solid;
+  position: relative;
+  overflow: hidden;
+  animation: head 1s infinite ease-in;
+  transition: all 0.5s;
+}
+.shap {
+  width: 1.3vw;
+  height: 1.3vw;
+  border: 2px var(--borderWhite) solid;
+  opacity: 0.7;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: load 2s infinite ease-in;
+  transition: all 0.5s;
+}
+.linL {
+  animation: none;
+  width: 3vw;
+}
+.shapL {
+  display: none;
+  animation: none;
+}
+.blink {
+  animation: blink 0.4s infinite;
+}
+
 @keyframes load {
+  0% {
+    top: 0;
+    border-radius: 0;
+  }
+  12.5% {
+    top: 70%;
+    border-radius: 0;
+  }
+  25% {
+    top: 100%;
+    border-radius: 0;
+  }
+  37.5% {
+    top: 70%;
+    border-radius: 0;
+  }
+  50% {
+    top: 0;
+    border-radius: 50%;
+  }
+  62.5% {
+    top: 70%;
+    border-radius: 50%;
+  }
+  75% {
+    top: 100%;
+    border-radius: 50%;
+  }
+  87.5% {
+    top: 70%;
+    border-radius: 50%;
+  }
+  100% {
+    top: 0;
+    border-radius: 0;
+  }
+}
+@keyframes head {
+  0% {
+    border-radius: 0;
+    transform: translateY(0);
+  }
+  30% {
+    border-radius: 0;
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+    border-radius: 100%;
+  }
+  100% {
+    border-radius: 0;
+    transform: translateY(0);
+  }
+}
+@keyframes blink {
   0% {
     opacity: 1;
   }
@@ -530,6 +618,7 @@ nav i {
     opacity: 1;
   }
 }
+
 /* MEDIAS */
 @media (max-width: 1700px) {
   .footSocial a {
@@ -579,6 +668,14 @@ nav i {
   .footSocial a {
     margin: 0 3vw;
   }
+  .lin {
+    width: 10vw;
+    height: 10vw;
+  }
+  .shap {
+    width: 3vw;
+    height: 3vw;
+  }
 }
 @media (max-width: 540px) {
   .side {
@@ -595,6 +692,14 @@ nav i {
   }
   .inMob {
     display: inline-block;
+  }
+  .shap {
+    width: 4vw;
+    height: 4vw;
+  }
+  .lin {
+    width: 10vw;
+    height: 17vw;
   }
 }
 /* AOS */
