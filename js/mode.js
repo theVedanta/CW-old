@@ -49,21 +49,9 @@ let body = document.body;
 let shapes = document.querySelectorAll(".transparent img");
 
 let loaded = () => {
-  document.querySelector(".shap").classList.add("shapL");
-  document.querySelector(".lin").classList.add("linL");
-  setTimeout(() => {
-    document.querySelector(".loader h1").textContent = "C";
-  }, 600);
-  setTimeout(() => {
-    document.querySelector(".loader h1").textContent = "CW";
-  }, 800);
-  setTimeout(() => {
-    document.querySelector(".lin").classList.add("blink");
-  }, 1000);
-  setTimeout(() => {
-    body.classList.remove("loading");
-    loader.classList.add("loaded");
-  }, 1200);
+  body.classList.remove("loading");
+  loader.classList.add("loaded");
+  document.querySelector(".circ").classList.add("loadedCirc");
 };
 
 let inital = () => {
@@ -88,10 +76,10 @@ let heroStuff = () => {
 };
 
 let load = () => {
-  setTimeout(loaded, 1400);
-  setTimeout(inital, 1400);
-  setTimeout(heroStuff, 1400);
-  setTimeout(theTrans, 1402);
+  loaded();
+  inital();
+  heroStuff();
+  setTimeout(theTrans, 2);
 };
 
 $(window).on("load", load);
