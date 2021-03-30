@@ -88,10 +88,10 @@ let heroStuff = () => {
 };
 
 let load = () => {
-  setTimeout(loaded, 1400);
-  setTimeout(inital, 1400);
-  setTimeout(heroStuff, 1400);
-  setTimeout(theTrans, 1402);
+  loaded();
+  inital();
+  heroStuff();
+  setTimeout(theTrans, 2);
 };
 
 $(window).on("load", load);
