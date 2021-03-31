@@ -94,4 +94,11 @@ let load = () => {
   setTimeout(theTrans, 2);
 };
 
-$(window).on("load", load);
+setInterval(() => {
+  document.querySelector(".shap").style.borderRadius = "50%";
+}, 1000);
+setInterval(() => {
+  document.querySelector(".shap").style.borderRadius = "0";
+}, 2000);
+
+// $(window).on("load", load);
