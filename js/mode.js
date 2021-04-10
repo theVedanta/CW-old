@@ -169,7 +169,7 @@ async function yourFunction(){
           swich = true
         }
       }
-      setTimeout(yourFunction, 1);
+      setTimeout(yourFunction, 10);
   }
 yourFunction()
 // $(window).on("load", load);
