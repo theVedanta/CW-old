@@ -94,11 +94,86 @@ let load = () => {
   setTimeout(theTrans, 2);
 };
 
-setInterval(() => {
-  document.querySelector(".shap").style.borderRadius = "50%";
-}, 1000);
-setInterval(() => {
-  document.querySelector(".shap").style.borderRadius = "0";
-}, 2000);
 
+var h = 0
+var g = 9.8 * -1
+var u = 51
+var swich = true
+var t = 0
+var percentage = 0
+var square = true
+var rx = 0
+async function yourFunction(){
+  var ball = document.getElementById('ball')
+  var tramp = document.getElementById('tramp')
+      
+      t = t + 0.15
+      h = (u*t) + (0.5*g*t*t) 
+      percentage = percentage + 1
+      ball.setAttribute('y',`${h * -1 - 30}`)
+      if (h < 15){
+        tramp.setAttribute('d',`M 0 0 C 150 ${h * -1 + 15}, 150 ${h * -1 + 15}, 300 0`)
+        if (h < 0){
+          ball.setAttribute('y',`${h * -1 - 30}`)
+        }
+      }
+      if (percentage <60 && percentage > 10){
+        if (square){
+          rx = rx + 0.3
+          ball.setAttribute('rx',`${rx}`)
+        } else {
+          rx = rx - 0.3
+          ball.setAttribute('rx',`${rx}`)
+        }
+      }
+      if (percentage <= 70){
+        ball.setAttribute('transform',`rotate(${360 * percentage / 70} 150 ${h * -1 - 15})`)
+        if(percentage == 70){
+          ball.setAttribute('transform',`rotate(0 150 ${h * -1 - 15})`)
+        }
+      } 
+      if (percentage > 70) {
+        if (percentage < 86 ){
+          height = percentage - 70
+          height = 30 - height
+        } else {
+          height = percentage - 85
+          height = 15 + height
+        }
+        if (height < 20){
+          height = 20
+        } else {
+          ball.setAttribute('transform',`translate(0 ${height - 15})`)
+        }
+        ball.setAttribute('height',height) 
+      }
+      if (swich){
+        if(h < 0){
+          u = -51
+          t = 0 
+          g = 23
+          swich = false
+        }       
+      } 
+      if (swich == false) {
+        if(h > 0){
+          u = 51
+          percentage = 0
+          if (square){
+            square = false
+          } else {
+            square = true
+          }
+          t = 0           
+          g = 9.8 * -1
+          swich = true
+        }
+      }
+      setTimeout(yourFunction, 1);
+  }
+yourFunction()
 // $(window).on("load", load);
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}

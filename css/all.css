@@ -493,10 +493,8 @@ nav i {
 }
 /* Loader */
 .loader {
-  display: flex;
+
   position: fixed;
-  justify-content: center;
-  align-items: center;
   top: 0;
   left: 0;
   width: 100vw;
@@ -506,6 +504,17 @@ nav i {
   pointer-events: none;
   transition: all 0.4s;
 }
+
+.loader svg{
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  top:50%;
+  height: 100px;
+  width: 300px;
+  overflow: visible;
+}
+
 .loading {
   overflow-y: hidden;
 }
