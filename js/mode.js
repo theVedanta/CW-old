@@ -112,7 +112,7 @@ async function yourFunction(){
       percentage = percentage + 1
       ball.setAttribute('y',`${h * -1 - 30}`)
       if (h < 15){
-        tramp.setAttribute('d',`M 0 0 C 150 ${h * -1 + 15}, 150 ${h * -1 + 15}, 300 0`)
+        tramp.setAttribute('d',`M 40 0 C 150 ${h * -1 + 15}, 150 ${h * -1 + 15}, 260 0`)
         if (h < 0){
           ball.setAttribute('y',`${h * -1 - 30}`)
         }
